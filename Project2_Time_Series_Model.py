@@ -1,3 +1,7 @@
+'''
+By Bosen Li (bl3097), Wenyu Luo (wl2905), Edward Zhang (yz4756)
+'''
+
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
@@ -64,3 +68,13 @@ best_cre = sorted(results, key=lambda x: x['r2_cre'], reverse=True)[0]
 best_card = sorted(results, key=lambda x: x['r2_card'], reverse=True)[0]
 print(best_cre['combo'], best_cre['r2_cre'])
 print(best_card['combo'], best_card['r2_card'])
+
+'''
+Key variables that could impact charge-off rates include interest rates, such as the Federal Funds Rate, the housing price index (HPI), consumer credit growth, the debt-to-income ratio (DTI), and initial jobless claims.
+
+-	Interest rates or consumer price index (CPI) fluctuations can significantly affect consumers’ ability to service their credit card debts.
+-	The housing price index is a critical factor influencing the probability of charge-offs in commercial real estate (CRE) loans.
+-	For banks, when facing financial strain, they may resort to charge-offs to reduce their exposure to risky assets or to improve liquidity management.
+
+To produce accurate forecasts using these models, I would need reliable macroeconomic forecasts, insights into potential monetary and fiscal policy changes, and industry-specific trends, such as CRE vacancy rates or shifts in consumer behavior for credit cards. These inputs would significantly enhance the accuracy and reliability of future predictions.
+'''
